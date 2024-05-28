@@ -1,21 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mini App</title>
+    <title>MOOZ</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; padding: 50px; }
-        button { padding: 10px 20px; font-size: 16px; }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #1666ba;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #f5f7fa;
+            padding: 0.5rem;
+        }
+        nav a {
+            color: #070708;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            background-color: #1666ba;
+            color: #fff;
+            padding: 1rem;
+        }
     </style>
 </head>
 <body>
-    <h1>Welcome to the Telegram Mini App</h1>
-    <button id="button">Click me</button>
-    <script>
-        document.getElementById('button').addEventListener('click', () => {
-            alert('Button clicked!');
-        });
-    </script>
+    <header>
+        <h1>MOOZ</h1>
+        <p>Ваша музыка, ваш мир, в одном касании</p>
+    </header>
+   <nav>
+        <a href="index"
+            target="_blank">Главная</a>
+        <a href="privacy"
+            target="_blank">Конфиденциальность</a>
+        <a href="account"
+            target="_blank">Управление аккаунтом</a>
+        <a href="support"
+            target="_blank">Связь</a>
+    </nav>
+<!--     <div class="container">
+        <h2>Welcome to MOOZ!</h2>
+        <p>We create exciting and immersive games for players around the world.</p>
+        <p>Explore our latest releases and stay tuned for upcoming titles!</p>
+    </div> -->
+    <footer>
+        © 2024 Reites Studios. Все права защищенны.
+    </footer>
 </body>
 </html>
